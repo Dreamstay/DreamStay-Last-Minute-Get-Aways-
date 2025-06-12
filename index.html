@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Dream Stay - Last Minute Luxury Getaways"/>
+  <title>Dream Stay | Last Minute Meets Luxury</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dream Stay</h1>
+    <p>Where Last Minute Meets Luxury</p>
+  </header>
+
+  <section class="search">
+    <label>
+      Where are you?
+      <input type="text" id="location" placeholder="Enter city or ZIP" />
+    </label>
+    <label>
+      Radius
+      <select id="radius">
+        <option value="25">25 miles</option>
+        <option value="50">50 miles</option>
+        <option value="100">100 miles</option>
+      </select>
+    </label>
+    <label>
+      Type
+      <select id="vacation-type">
+        <option value="">Any</option>
+        <option value="beach">Beach</option>
+        <option value="mountain">Mountain</option>
+        <option value="city">City</option>
+        <option value="theme-park">Theme Park</option>
+        <option value="nature">Nature</option>
+      </select>
+    </label>
+    <button onclick="searchDeals()">Find Deals</button>
+  </section>
+
+  <section id="deals" class="deals">
+    <h2>🔥 Leave Today Deals</h2>
+    <div id="deals-container"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dream Stay. Luxury within reach.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
